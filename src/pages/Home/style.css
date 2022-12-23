@@ -1,0 +1,126 @@
+.finder-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(12, 11, 20);
+  flex-direction: column;
+}
+
+.main-content {
+  width: 37%;
+}
+
+.form-finder {
+  flex-direction: column;
+}
+
+.form-finder,
+.profile-content {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 2rem;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.input-finder,
+.button-finder {
+  all: unset;
+  background-color: rgba(255, 255, 255, 0.02);
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+}
+
+.input-finder {
+  margin-right: 1rem;
+}
+
+.button-finder {
+  transition: .5s;
+  cursor: pointer;
+}
+
+.button-finder:hover {
+  transition: .5s;
+  transform: scale(0.9);
+  background-color: rgba(255, 255, 255, 0.03);
+
+}
+
+.form-finder,
+.title,
+.content-info,
+.profile-image,
+.profile-bio,
+.followers-types-content {
+  margin-bottom: 1.4rem;
+}
+
+.profile-infos .title {
+  margin-bottom: .6rem;
+}
+
+.profile-image {
+  width: 12rem;
+  border-radius: 50%;
+}
+
+.profile-bio {
+  font-size: 1.3rem;
+  width: 72%;
+  text-align: center;
+}
+
+.title,
+.subtitle {
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+}
+
+.profile-infos {
+  flex-direction: column;
+}
+
+.followers-types-content {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.followers-types-content div {
+  flex-direction: column;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.02);
+  padding: 0.7rem 1.4rem;
+}
+
+@media (max-width:790px) {
+  .main-content {
+    width: 95%;
+  }
+}
+
+@media (max-width:370px) {
+  .input-finder {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .search-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-finder {
+    font-size: 2rem;
+  }
+}
