@@ -14,6 +14,8 @@ export default function Home() {
     setError(false)
     setProfileInfos([])
 
+    if (!user) { return }
+
     try {
 
       const { data } = await instance.get(`/${user}`)
